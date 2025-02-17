@@ -1,15 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <settings>
- <pluginGroups>
+
+  <pluginGroups>
     <pluginGroup>org.mule.tools</pluginGroup>
   </pluginGroups>
-<servers>
-    <server>
-        <id>Repository</id>
-        <username>~~~Client~~~</username>
-        <password>a00a263c713544de9f9eebd5fd8e4984~?~7A832d21F48A4cAFb7E4F60a0360b8E6</password>
-    </server>
 
-</servers>
-  
+  <servers>
+    <server>
+      <id>Repository</id>
+      <username>~~~Client~~~</username>
+       <password>a00a263c713544de9f9eebd5fd8e4984~?~7A832d21F48A4cAFb7E4F60a0360b8E6</password>
+    </server>
+  </servers>
+
 </settings>
