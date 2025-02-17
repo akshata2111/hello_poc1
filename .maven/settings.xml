@@ -1,16 +1,56 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <settings>
-
-  <pluginGroups>
-    <pluginGroup>org.mule.tools</pluginGroup>
-  </pluginGroups>
-
-  <servers>
+<servers>
     <server>
-      <id>Repository</id>
-      <username>~~~Client~~~</username>
-      <password>${client.id}~?~${client.secret}</password>
+        <id>Repository</id>
+        <username>~~~Client~~~</username>
+        <password>a00a263c713544de9f9eebd5fd8e4984~?~7A832d21F48A4cAFb7E4F60a0360b8E6</password>
     </server>
-  </servers>
 
+</servers>
+<profiles>
+    <profile>
+        <id>Repository</id>
+        <activation>
+            <activeByDefault>true</activeByDefault>
+        </activation>
+        <repositories>
+            <repository>
+                <id>Repository</id>
+                <name>Repository</name>
+                <url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+                <layout>default</layout>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+            </repository>
+        </repositories>
+    </profile>
+	<profile>
+        <id>anypoint-exchange-v3</id>
+        <activation>
+            <activeByDefault>true</activeByDefault>
+        </activation>
+		<properties>
+                <mulesoft.exchange.groupid>e244ac85-ac45-4c9c-a545-d23322738180</mulesoft.exchange.groupid>
+         </properties>
+        <repositories>
+            <repository>
+                <id>Repository</id>
+                <name>Repository</name>
+                <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/e244ac85-ac45-4c9c-a545-d23322738180/maven</url>
+                <layout>default</layout>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+            </repository>
+        </repositories>
+    </profile>
+</profiles>   
 </settings>
