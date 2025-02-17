@@ -18,12 +18,12 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-maven-
 
-      - name: Set up JDK 18
-        uses: actions/setup-java@v4
+      - name: action/chekout@v2
+        uses: actions/setup-java@v2
         with:
-          distribution: "Oracle"
+          distribution: "Microsoft"
           java-version: 17
-      
+                
       - name: Publish to Exchange
         run: |
           mvn deploy --settings .maven/settings.xml -DskipMunitTests \
