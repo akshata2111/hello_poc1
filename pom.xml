@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>e244ac85-ac45-4c9c-a545-d23322738180</groupId>
-	<artifactId>hello_poc</artifactId>
+	<artifactId>hello_poc_23</artifactId>
 	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
-	<name>hello_poc</name>
+	<name>hello_poc_23</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,8 +32,8 @@
 				    <configuration>
         			   <classifier>mule-application</classifier>
        			       <cloudhub2Deployment>
-          				   <uri>https://anypoint.mulesoft.com</uri>
-            			   <provider>MC</provider>
+          			       <uri>https://anypoint.mulesoft.com</uri>
+            			       <provider>MC</provider>
 			               <environment>Sandbox</environment>
 			               <target>Cloudhub-US-East-2</target>
 			               <server>Repository</server>
